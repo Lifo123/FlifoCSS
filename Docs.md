@@ -1,4 +1,5 @@
-<h1 align='center'>Flifo</h1>
+<h1 align=center>Documentation</h1>
+From version 4 extension provides options to customize the behavior of the snippets:
 
 ### Index
 - [Display](#Display)
@@ -7,22 +8,56 @@
 - [Buttons](#Buttons)
 
 
-### Documentation
-- ### Display
-    ###
-        a
-- ### Margin
-    ###
-        a
-- ### Padding
-    ###
-        a
-- ## Border
-    ###
-        a
-- ## Buttons
+
+### Display
+| Display Flex | Functionality |
+|---------|------------|
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+
+| Display Grid | Functionality |
+|---------|------------|
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+
+### Padding
+| Padding | Functionality |
+|---------|------------|
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+| d-flex | dawda |
+
 
 
 ### FREE License
 
-You cand modify, delete and update this project without permission
+You can modify, delete and update this project without permission
