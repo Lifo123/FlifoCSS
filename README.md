@@ -1,22 +1,18 @@
-<h1 align='center'>Flifo</h1>
+<h1 align='center'>Flifo v0.1</h1>
 
 Pequeño Framework para trabajar y maquetar rapidamente con clases en un /html This Project is bases complety in BootStrap but more compile, only with necesary classes for maqueting
 
-### Basics
-- Wasa
-- ### wa
 
-## Test
-[![Build Status](https://img.shields.io/github/actions/workflow/status/twbs/bootstrap/js.yml?branch=main&label=JS%20Tests&logo=github)](https://github.com/twbs/bootstrap/actions/workflows/js.yml?query=workflow%3AJS+branch%3Amain)
+## How to use
+- #### **Download** the [Flifo File]("https://github.com/Lifo123/FlifoCSS/tree/main/Framework")
+- #### Save in `CSS` Folder in your project.
+- #### Insert a `<link src='./Path/.Flifo.css'>` in your `index.html`.
+- #### Now let's Start Development.
 
-<details>
-```javascript
-  const function(){
-    console.log('Hello World')
-  }
+## Docs
+Check our [Documentation]() for more information to start use.
 
-'''
-</details>
-### FREE License
 
-You cand modify, delete and update this project without permission
+## FREE License
+
+You can modify, delete and update this project without permission.
