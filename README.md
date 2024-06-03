@@ -4,13 +4,13 @@ Pequeño Framework para trabajar y maquetar rapidamente con clases en un /html T
 
 
 ## How to use
-- #### **Download** the [Flifo File]("https://github.com/Lifo123/FlifoCSS/tree/main/Framework")
-- #### Save in `CSS` Folder in your project.
-- #### Insert a `<link src='./Path/.Flifo.css'>` in your `index.html`.
+- #### **Download** the [Flifo File](https://github.com/Lifo123/FlifoCSS/tree/main/Framework)
+- #### Save in CSS Folder in your project.
+- #### Insert a `<link src='./Path/.Flifo.css'>` in your index.html.
 - #### Now let's Start Development.
 
 ## Docs
-Check our [Documentation]("https://github.com/Lifo123/FlifoCSS/blob/main/Docs.md") for more information to start use.
+Check our [Documentation](https://github.com/Lifo123/FlifoCSS/blob/main/Docs.md) for more information to start use.
 
 
 ## FREE License
