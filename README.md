@@ -1,8 +1,11 @@
-# React + Vite
+# CSS Framework by @Lifo123
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pequeño Framework para trabajar y maquetar rapidamente con clases en un .html
 
-Currently, two official plugins are available:
+## Use Steps
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    This Project is bases complety in BootStrap but more compile, only with necesary classes for maqueting
+
+## FREE License
+
+    You cand modify, delete and update this project without permission
