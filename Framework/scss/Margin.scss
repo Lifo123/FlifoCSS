@@ -66,10 +66,6 @@
 // #endregion
 
 // #region Margin With Pixels
-.mt-5 {
-  margin-top: 5px !important;
-}
-
 .mt-10 {
   margin-top: 10px !important;
 }
@@ -205,4 +201,8 @@
 
 .my-auto {
   margin-block: auto;
+}
+
+.mb-15{
+  margin-bottom: 15px;
 }

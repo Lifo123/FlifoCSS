@@ -17,6 +17,7 @@
 .pointer {
   cursor: pointer;
   user-select: none;
+  pointer-events: visible !important;
 }
 
 .no-select {

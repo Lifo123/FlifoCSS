@@ -7,9 +7,33 @@
 }
 
 .fixed {
-  position: fixed;
+  position: fixed !important;
 }
 
 .sticky {
-  position: sticky;
+  position: sticky !important;
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+.o-visible {
+  overflow: visible;
+}
+
+.ox-hidden {
+  overflow-x: hidden;
+}
+
+.ox-visible {
+  overflow-x: visible;
+}
+
+.oy-hidden {
+  overflow-y: hidden;
+}
+
+.oy-visible {
+  overflow-y: visible;
 }
