@@ -29,6 +29,10 @@
 .ox-visible {
   overflow-x: visible;
 }
+.ox-auto{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 
 .oy-hidden {
   overflow-y: hidden;
@@ -36,4 +40,9 @@
 
 .oy-visible {
   overflow-y: visible;
+}
+
+.oy-auto{
+  overflow-y: auto;
+  overflow-x: hidden;
 }
