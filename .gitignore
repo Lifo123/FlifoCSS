@@ -14,7 +14,6 @@ dist-ssr
 *.cjs
 *.html
 *.js
-src
 
 # Editor directories and files
 .vscode/*
@@ -27,3 +26,4 @@ src
 *.sln
 *.sw?
 src/css/Framework/scss
+index.html
