@@ -19,14 +19,29 @@
 .g-5 {
   gap: var(--spacing-5);
 }
+.g-6 {
+  gap: var(--spacing-6);
+}
+
+.g-7 {
+  gap: var(--spacing-7);
+}
+
+.g-8 {
+  gap: var(--spacing-8);
+}
+
+.g-9 {
+  gap: var(--spacing-9);
+}
+
+.g-10 {
+  gap: var(--spacing-10);
+}
 
 // #endregion
 
 // #region Gap with px
-
-.g-10 {
-  gap: 10px;
-}
 
 .g-15 {
   gap: 15px;

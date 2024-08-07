@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --host",
-    "sass": "sass --style=compressed src/scss/Main.scss src/output/Flifo.css"
+    "sass": "sass --style=compressed src/scss/Main/Main.scss src/output/Flifo.css"
   },
   "dependencies": {
     "react": "^18.2.0",
