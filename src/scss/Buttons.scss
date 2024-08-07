@@ -13,8 +13,11 @@
 
 .btn{
   padding: 12px 24px;
+  min-width: max-content;
 }
-
+.btn-br{
+  border: solid 1px var(--f-tittle);
+}
 .btn-black{
   background-color: black;
   color: #FFF;

@@ -24,20 +24,26 @@
   --spacing-7: 2.25rem;
   --spacing-8: 2.5rem;
   --spacing-9: 3rem;
+  --spacing-10: 3.25rem;
+  --spacing-11: 3.5rem;
+  --spacing-12: 4rem;
 
   //#endregion
 
   // #region Font Size
 
-  --font-size-1: clamp(12px, 5vw, 14px);  
-  --font-size-2: clamp(14px, 5vw, 16px);  
-  --font-size-3: clamp(16px, 5vw, 18px); 
-  --font-size-4: clamp(18px, 5vw, 20px); 
-  --font-size-5: clamp(20px, 5vw, 30px); 
+  --font-size-1: clamp(12px, 5vw, 14px);
+  --font-size-2: clamp(14px, 5vw, 16px);
+  --font-size-3: clamp(16px, 5vw, 18px);
+  --font-size-4: clamp(20px, 5vw, 20px);
+  --font-size-5: clamp(24px, 4vw, 30px);
   --font-size-6: clamp(28px, 5vw, 36px);
-  --font-size-7: clamp(32px, 6vw, 48px);
-  --font-size-8: clamp(44px, 7vw, 60px); 
-  --font-size-9: clamp(56px, 8vw, 72px);
+  --font-size-7: clamp(32px, 5.8vw, 45px);
+  --font-size-8: clamp(40px, 7vw, 56px);
+  --font-size-9: clamp(52px, 7.6vw, 66px);
+  --font-size-10: clamp(60px, 8vw, 68px);
+  --font-size-11: clamp(68px, 8.6vw, 88px);
+  --font-size-12: clamp(76px, 9vw, 96px);
 
   //#endregion
 
@@ -60,6 +66,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Inter, sans-serif;
+  color: var(--f-text);
+}
+*::before, *::after{
+  box-sizing: border-box;
 }
 
 ul {
@@ -72,4 +82,8 @@ a {
 
 svg {
   pointer-events: none;
+}
+
+p {
+  margin-bottom: 16px;
 }
