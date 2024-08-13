@@ -147,30 +147,38 @@
     scale: 1;
 }
 
-.text-blue {
-    color: #0d84ff;
-}
-
-.text-red {
-    color: #ff0d0d;
-}
-
-.text-green {
-    color: #08c325;
-}
-
-.text-yellow {
-    color: #f5b800;
-}
-
-.text-orange {
-    color: #ff7f00;
-}
-
 .text-white {
     color: #FFF;
 }
 
 .text-black {
     color: #000;
+}
+
+.text-blue {
+    color: var(--f-text-blue);
+}
+
+.text-red {
+    color: var(--f-text-red);
+}
+
+.text-green {
+    color: var(--text-green);
+}
+
+.text-yellow {
+    color: var(--f-text-yellow);
+}
+
+.text-orange {
+    color: var(--f-text-oragen);
+}
+
+.text-purple {
+    color: var(--f-text-purple);
+}
+
+.text-pink {
+    color: var(--f-text-pink);
 }
