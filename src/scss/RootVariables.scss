@@ -76,8 +76,14 @@
   font-family: Inter, sans-serif;
   color: var(--f-text);
 }
-*::before, *::after{
+
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--f-bg);
 }
 
 ul {
