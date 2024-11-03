@@ -1,0 +1,112 @@
+---
+import "@lifo123/library/dist/css/library.css";
+import { DarkmodeDrop } from "@lifo123/library";
+import Content from './wasa.md'
+---
+
+<script>
+	const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+	function setDarkMode(document: any) {
+		const isDark = window.matchMedia(
+			"(prefers-color-scheme: dark)",
+		).matches;
+		const theme =
+			localStorage.getItem("F-Theme") || (isDark ? "dark" : "light");
+
+		if (theme === "system") {
+			document.documentElement.classList[isDark ? "add" : "remove"](
+				"dark",
+			);
+			document.documentElement.style.colorScheme = isDark
+				? "dark"
+				: "light";
+			return;
+		}
+
+		document.documentElement.classList[theme === "dark" ? "add" : "remove"](
+			"dark",
+		);
+		document.documentElement.style.colorScheme =
+			theme === "dark" ? "dark" : "light";
+	}
+
+	setDarkMode(document);
+
+	document.addEventListener("astro:before-swap", (event) =>
+		setDarkMode(event.newDocument),
+	);
+	mediaQuery.addEventListener("change", () => setDarkMode(document));
+</script>
+
+<html lang="en" translate="no">
+	<head>
+		<title>Flifo CSS</title>
+		<meta name="Author" content="Lifo123" />
+		<meta name="description" content="Test" />
+
+		<meta charset="utf-8" />
+		<meta name="color-scheme" content="light dark" />
+		<meta name="viewport" content="width=device-width" />
+		<!--Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/src//output/Flifo.css" />
+		<link rel="stylesheet" href="/src/output/Markdown.css" />
+	</head>
+	<body class="f-col f-justify-center f-align-center">
+		<header class="header sticky f-row f-justify-between f-align-center px-5">
+			<h2>
+				LIFO
+			</h2>
+			<div class="f-row g-3">
+				<p class="m-0">About</p>
+				<p class="m-0">Features</p>
+				<p class="m-0">Docs</p>
+			</div>
+		</header>
+		<h1 class="mt-6 fw-500">Template Astro Lifo</h1>
+		<DarkmodeDrop storage="F-Theme" client:only="react" />
+		<div class="f-row g-3 mx-auto mt-3">
+			<span class="btn btn-primary br-6">Get Started</span>
+			<span class="btn btn-secondary br-6">Secondary</span>
+			<span class="btn btn-third br-6">third</span>
+			<span class="btn btn-fourth br-6 sd-1">fourth</span>
+		</div>
+		<div class="lb-md w-60 mx-auto f-col g-2 mt-6" style="height: 900px;">
+			<input type="text" placeholder="Search..." />
+			<input type="range">
+			<input type="checkbox">
+			<input type="color">
+		</div>
+	</body>
+</html>
+
+<style>
+	.header{
+		background-color: var(--lb-bg);
+		width: 100%;
+		padding: 1rem 3rem;
+		top: 0;
+
+		animation: Scroll linear both;
+		animation-timeline: scroll();
+		animation-range: 70px 600px;
+	}
+
+	@keyframes Scroll {
+		100% {
+			top: 40px;
+			border-radius: 150px;
+			background: transparent;
+			backdrop-filter: blur(10px);
+			border: solid 1px var(--lb-br-2-hover);
+			width: 50%;
+			min-width: max-content;
+		}
+	}
+
+</style>

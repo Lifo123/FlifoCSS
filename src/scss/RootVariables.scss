@@ -1,0 +1,132 @@
+:root {
+
+  // #region Basic Colors
+
+  --lb-bg: #fcfcfd;
+  --lb-bg-2: #fbfbfb;
+  --lb-bg-2-hover: #f5f5f5;
+
+  --lb-br-low: #969696;
+  --lb-br: #747477;
+  --lb-br-2: #494949ad;
+  --lb-br-2-hover: #efefef;
+
+  --lb-hr: #262626;
+  --lb-icon: #09090B;
+
+  --lb-btn-primary: #121212;
+  --lb-btn-secondary: #171718;
+
+  --lb-title: #121212;
+  --lb-text: #56565C;
+  --lb-placeholder: #585858;
+  --lb-link: #0050b5;
+
+  --lb-hue: 210;
+  --lb-sat: 100%;
+  --lb-light: 50%;
+  --lb-opacity: 1;
+
+  --lb-hsl-primary: hsl(var(--lb-hue), var(--lb-sat), var(--lb-light), var(--lb-opacity));
+
+  // #endregion
+
+
+  // #region Spacing or Gap or Margin Rem
+
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 1rem;
+  --spacing-4: 1.5rem;
+  --spacing-5: 2rem;
+  --spacing-6: 2.5rem;
+  --spacing-7: 3rem;
+  --spacing-8: 3.5rem;
+  --spacing-9: 4rem;
+  --spacing-10: 5rem;
+  --spacing-11: 6rem;
+  --spacing-12: 7rem;
+  --spacing-13: 8rem;
+  --spacing-14: 10rem;
+
+  //#endregion
+
+  // #region Font Size
+  --lb-multiplier: 1;
+  --lb-fs-1: calc(var(--lb-multiplier) * 12px);
+  --lb-fs-2: calc(var(--lb-multiplier) * 14px);
+  --lb-fs-3: calc(var(--lb-multiplier) * 16px);
+  --lb-fs-4: calc(var(--lb-multiplier) * 18px);
+  --lb-fs-5: calc(var(--lb-multiplier) * 20px);
+  --lb-fs-6: calc(var(--lb-multiplier) * 24px);
+  --lb-fs-7: calc(var(--lb-multiplier) * 28px);
+  --lb-fs-8: calc(var(--lb-multiplier) * 32px);
+  --lb-fs-9: calc(var(--lb-multiplier) * 40px);
+  --lb-fs-10: calc(var(--lb-multiplier) * 48px);
+  --lb-fs-11: calc(var(--lb-multiplier) * 56px);
+  --lb-fs-12: calc(var(--lb-multiplier) * 64px);
+  --lb-fs-13: calc(var(--lb-multiplier) * 72px);
+  --lb-fs-14: calc(var(--lb-multiplier) * 80px);
+  --lb-fs-15: calc(var(--lb-multiplier) * 96px);
+  --lb-fs-16: calc(var(--lb-multiplier) * 112px);
+
+  //#endregion
+
+
+
+}
+
+.dark {
+  --lb-bg: #171717;
+  --lb-bg-2: #111214;
+  --lb-bg-2-hover: #222227;
+
+  --lb-br-low: #262628;
+  --lb-br: #3d3d3f;
+  --lb-br-2: #ffffff33;
+  --lb-br-2-hover: #262626;
+
+  --lb-hr: #262626;
+  --lb-icon: #fafafabf;
+
+  --lb-btn-primary: #fdfdfd;
+  --lb-btn-secondary: #262626;
+
+  --lb-title: #FAFAFA;
+  --lb-text:#D4D4D4;
+  --lb-placeholder: #5c5c5c;
+  --lb-link: #07aaff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Satooshi, Inter, sans-serif;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  pointer-events: none;
+}
+
+.icon{
+  background-color: transparent;
+  stroke: var(--lb-icon);
+  fill: var(--lb-icon);
+}
+.icon svg{
+  pointer-events: none;
+}

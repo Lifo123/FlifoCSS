@@ -1,0 +1,94 @@
+.pointer {
+  cursor: pointer;
+  user-select: none;
+  pointer-events: visible !important;
+}
+
+.no-select {
+  user-select: none;
+  pointer-events: none;
+}
+
+//*Buttons*/
+
+.btn {
+  padding: 0.4rem 1.25rem;
+  font-size: var(--lb-fs-2);
+  min-width: max-content;
+  height: max-content;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  line-height: 1.4rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--lb-btn-primary);
+  color: var(--lb-bg);
+  transition: opacity .3s ease;
+}
+
+.btn-primary:hover {
+  opacity: .9;
+}
+
+.btn-secondary {
+  background-color: var(--lb-btn-secondary);
+  border: solid 1px var(--lb-btn-secondary);
+  color: #FAFAFA;
+}
+
+.btn-secondary:hover {
+  opacity: .98;
+}
+
+.btn-third{
+  border: solid 1px var(--lb-br-low);
+  transition: background-color .3s ease;
+}
+.btn-third:hover {
+  background-color: var(--lb-br-2-hover);
+}
+.btn-fourth{
+  color: var(--lb-text);
+  transition: background-color .2s ease;
+}
+.btn-fourth:hover{
+  color: var(--lb-title);
+  background-color: var(--lb-br-2-hover);
+}
+
+.btn-br {
+  border: solid 1px var(--lb-br);
+}
+
+.btn-black {
+  background-color: black;
+  color: #FFF;
+}
+
+.btn-red {
+  background-color: #f62323;
+  color: #FFF;
+}
+
+.btn-blue {
+  background-color: #0c77e2;
+  color: #FFF;
+}
+
+.btn-green {
+  background-color: #2c9631;
+  color: #FFF;
+}
+
+.btn-orange {
+  background-color: #ed861e;
+  color: #FFF;
+}
+
+.btn-yellow {
+  background-color: #f4c70f;
+  color: #000;
+}
