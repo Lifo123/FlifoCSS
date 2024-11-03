@@ -25,7 +25,7 @@
 .lb-md h2 {
     font-size: var(--lb-fs-5);
     font-weight: 600;
-    border-bottom: solid 1px var(--lb-br-low);
+    border-bottom: solid 1px rgba(var(--lb-br), 45);
     padding: .5rem .2rem .9rem .2rem;
     margin-bottom: var(--spacing-2);
 }
@@ -72,7 +72,7 @@
     font-style: italic;
     padding: .8rem .8rem .8rem 1.4rem;
     background-color: var(--lb-bg-2);
-    border: solid 1px var(--lb-br-2-hover);
+    border-bottom: solid 1px rgba(var(--lb-br), .3);
     border-left: 4px solid var(--lb-hsl-primary);
     margin: var(--spacing-3) 0;
     border-radius: 4px;
@@ -92,7 +92,6 @@
 .lb-md code {
     font-family: monospace;
     font-size: calc(var(--lb-multiplier) * 14px);
-    background-color: var(--lb-bg-light);
     border-radius: 4px;
 }
 
@@ -115,7 +114,7 @@
 
 .lb-md table th,
 .lb-md table td {
-    border: 1px solid var(--lb-br-low);
+    border-bottom: solid 1px rgba(var(--lb-br), 45);
     padding: var(--spacing-2);
     text-align: left;
 }
@@ -128,6 +127,6 @@
 
 .lb-md hr {
     border: none;
-    border-top: 1px solid var(--lb-br-low);
+    border-bottom: solid 1px rgba(var(--lb-br), 45);
     margin: var(--spacing-3) 0;
 }

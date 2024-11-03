@@ -6,28 +6,8 @@ input[type="search"],
 input[type="tel"],
 input[type="url"] {
     outline: none;
-    border: solid 1px var(--lb-br-low);
+    border: solid 1px rgba(var(--lb-br), .45);
     border-radius: 4px;
     padding: .7rem 1rem;
     font-size: calc(var(--lb-multiplier) * 15px);
-}
-
-input[type="color"] {
-    padding: 0;
-    border: none;
-    height: 12px;
-    position: relative;
-    width: 12px;
-    aspect-ratio: 1 / 1;
-    border: solid 1px var(--lb-br-low);
-}
-input[type="checkbox"]::after{
-    content: attr(value);
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 24px;
-    aspect-ratio: 1 / 1;
-    background-color: atrr(data-color);
 }

@@ -1,6 +1,6 @@
 ---
 import "@lifo123/library/dist/css/library.css";
-import { DarkmodeDrop } from "@lifo123/library";
+import { DarkmodeDrop, InputText } from "@lifo123/library";
 import Content from './wasa.md'
 ---
 
@@ -76,21 +76,29 @@ import Content from './wasa.md'
 			<span class="btn btn-third br-6">third</span>
 			<span class="btn btn-fourth br-6 sd-1">fourth</span>
 		</div>
-		<div class="lb-md w-60 mx-auto f-col g-2 mt-6" style="height: 900px;">
+		<div class="lb-md w-60 mx-auto f-col g-2 mt-6">
 			<input type="text" placeholder="Search..." />
 			<input type="range">
 			<input type="checkbox">
-			<input type="color">
+			<InputText type="text" placeholder="Search..." client:only="react" />
+		</div>
+		<div class="lb-md w-60 mx-auto f-col g-2 mt-6">
+			<Content />
 		</div>
 	</body>
 </html>
 
 <style>
+	body{
+		background-color: var(--lb-bg);
+	}
+
 	.header{
 		background-color: var(--lb-bg);
 		width: 100%;
 		padding: 1rem 3rem;
 		top: 0;
+		z-index: 1000;
 
 		animation: Scroll linear both;
 		animation-timeline: scroll();
@@ -99,12 +107,12 @@ import Content from './wasa.md'
 
 	@keyframes Scroll {
 		100% {
-			top: 40px;
+			top: 20px;
 			border-radius: 150px;
 			background: transparent;
-			backdrop-filter: blur(10px);
+			backdrop-filter: blur(4px);
 			border: solid 1px var(--lb-br-2-hover);
-			width: 50%;
+			width: 80%;
 			min-width: max-content;
 		}
 	}
