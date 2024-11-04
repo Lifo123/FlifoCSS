@@ -44,24 +44,27 @@
 
 .btn-secondary:hover {
   opacity: .98;
-  outline: solid 1px  rgba(var(--lb-br), .75);
+  outline: solid 1px rgba(var(--lb-br), .75);
 }
 
-.btn-third{
+.btn-third {
   border: solid 1px rgba(var(--lb-br), .45);
   transition: background-color .25s ease;
 }
+
 .btn-third:hover {
   background-color: rgba(var(--lb-br), .175);
   border: solid 1px rgba(var(--lb-br), .8);
 }
-.btn-fourth{
-  color: var(--lb-text); 
+
+.btn-fourth {
+  color: var(--lb-text);
   transition: background-color .3s ease;
 }
-.btn-fourth:hover{
-  color: rgb(var(--lb-title));
-  background-color: rgba(var(--lb-br), .175);
+
+.btn-fourth:hover {
+  color: rgba(var(--lb-title));
+  background-color: rgba(var(--lb-br), .125);
 }
 
 .btn-br {
@@ -96,4 +99,10 @@
 .btn-yellow {
   background-color: #f4c70f;
   color: #000;
+}
+
+@media (550px > width) {
+  .btn {
+    flex-grow: 1;
+  }
 }

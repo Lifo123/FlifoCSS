@@ -1,5 +1,5 @@
 .lb-md {
-    color: var(--lb-title);
+    color: rgba(var(--lb-title));
     line-height: 1.5rem;
 }
 
@@ -25,7 +25,7 @@
 .lb-md h2 {
     font-size: var(--lb-fs-5);
     font-weight: 600;
-    border-bottom: solid 1px rgba(var(--lb-br), 45);
+    border-bottom: solid 1px rgba(var(--lb-br), .45);
     padding: .5rem .2rem .9rem .2rem;
     margin-bottom: var(--spacing-2);
 }
@@ -114,7 +114,7 @@
 
 .lb-md table th,
 .lb-md table td {
-    border-bottom: solid 1px rgba(var(--lb-br), 45);
+    border-bottom: solid 1px rgba(var(--lb-br), .45);
     padding: var(--spacing-2);
     text-align: left;
 }
@@ -127,6 +127,6 @@
 
 .lb-md hr {
     border: none;
-    border-bottom: solid 1px rgba(var(--lb-br), 45);
+    border-bottom: solid 1px rgba(var(--lb-br), .45);
     margin: var(--spacing-3) 0;
 }

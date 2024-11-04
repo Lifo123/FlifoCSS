@@ -27,7 +27,6 @@ input[type="url"]:focus {
     border-radius: 4px;
     padding: 0.7rem 1rem;
     font-size: calc(var(--lb-multiplier) * 15px);
-    background-color: rgb(var(--lb-bg-2));
 }
 
 .lb-input-text input:focus {
@@ -36,7 +35,6 @@ input[type="url"]:focus {
 }
 
 .lb-input-text span.holder {
-    background-color: rgb(var(--lb-bg-2));
     padding: 0px 5px;
     top: 46%;
     left: 16px;
