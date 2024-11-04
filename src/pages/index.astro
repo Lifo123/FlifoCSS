@@ -1,7 +1,6 @@
 ---
-import "@lifo123/library/dist/css/library.css";
 import { DarkmodeDrop, InputText } from "@lifo123/library";
-import Content from './wasa.md'
+import Content from "./wasa.md";
 ---
 
 <script>
@@ -55,13 +54,12 @@ import Content from './wasa.md'
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/src//output/Flifo.css" />
-		<link rel="stylesheet" href="/src/output/Markdown.css" />
 	</head>
 	<body class="f-col f-justify-center f-align-center">
-		<header class="header sticky f-row f-justify-between f-align-center px-5">
-			<h2>
-				LIFO
-			</h2>
+		<header
+			class="header sticky f-row f-justify-between f-align-center px-5"
+		>
+			<h2>LIFO</h2>
 			<div class="f-row g-3">
 				<p class="m-0">About</p>
 				<p class="m-0">Features</p>
@@ -76,11 +74,17 @@ import Content from './wasa.md'
 			<span class="btn btn-third br-6">third</span>
 			<span class="btn btn-fourth br-6 sd-1">fourth</span>
 		</div>
-		<div class="lb-md w-60 mx-auto f-col g-2 mt-6">
-			<input type="text" placeholder="Search..." />
-			<input type="range">
-			<input type="checkbox">
-			<InputText type="text" placeholder="Search..." client:only="react" />
+		<div class=" w-60 mx-auto f-col g-2 mt-6">
+			<input class="input" type="text" placeholder="Search..." />
+			<input type="range" />
+			<input type="checkbox" />
+			<div class="" style="background-color: rgb(var(--lb-bg-2));">
+				<InputText
+				type="text"
+				placeholder="Search"
+				client:only="react"
+			/>
+			</div>
 		</div>
 		<div class="lb-md w-60 mx-auto f-col g-2 mt-6">
 			<Content />
@@ -89,16 +93,17 @@ import Content from './wasa.md'
 </html>
 
 <style>
-	body{
-		background-color: var(--lb-bg);
+	body {
+		background-color: rgb(var(--lb-bg));
 	}
 
-	.header{
-		background-color: var(--lb-bg);
+	.header {
+		background-color:  rgba(var(--lb-bg), 1);
 		width: 100%;
 		padding: 1rem 3rem;
 		top: 0;
 		z-index: 1000;
+		border: solid 1px rgba(var(--lb-br), 0.0);
 
 		animation: Scroll linear both;
 		animation-timeline: scroll();
@@ -109,12 +114,11 @@ import Content from './wasa.md'
 		100% {
 			top: 20px;
 			border-radius: 150px;
-			background: transparent;
-			backdrop-filter: blur(4px);
-			border: solid 1px var(--lb-br-2-hover);
+			background: rgba(var(--lb-bg), .8);
+			backdrop-filter: blur(1px);
+			border: solid 1px rgba(var(--lb-br), 0.4);
 			width: 80%;
 			min-width: max-content;
 		}
 	}
-
 </style>

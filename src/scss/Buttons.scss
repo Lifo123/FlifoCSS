@@ -26,13 +26,13 @@
 
 .btn-primary {
   background-color: var(--lb-btn-primary);
-  color: var(--lb-bg);
+  color: rgb(var(--lb-bg));
   transition: opacity .3s ease;
   font-weight: 600;
 }
 
 .btn-primary:hover {
-  opacity: .9;
+  opacity: .94;
 }
 
 .btn-secondary {
@@ -44,24 +44,24 @@
 
 .btn-secondary:hover {
   opacity: .98;
-  outline: solid 1px  rgba(var(--lb-br), .85);
+  outline: solid 1px  rgba(var(--lb-br), .75);
 }
 
 .btn-third{
-  border: solid 1px rgba(var(--lb-br), .55);
+  border: solid 1px rgba(var(--lb-br), .45);
   transition: background-color .25s ease;
 }
 .btn-third:hover {
-  background-color: rgba(var(--lb-br), .25);
+  background-color: rgba(var(--lb-br), .175);
   border: solid 1px rgba(var(--lb-br), .8);
 }
 .btn-fourth{
   color: var(--lb-text);
-  transition: background-color .25s ease;
+  transition: background-color .3s ease;
 }
 .btn-fourth:hover{
   color: var(--lb-title);
-  background-color: rgba(var(--lb-br), .25);
+  background-color: rgba(var(--lb-br), .175);
 }
 
 .btn-br {
