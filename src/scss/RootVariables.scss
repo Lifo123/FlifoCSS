@@ -93,7 +93,7 @@
 
   --lb-br: 96, 96, 103;
   --lb-br-high: 130, 130, 138;
-  --lb-icon: #bfbfbfbf;
+  --lb-icon: #efefefbf;
 
   --lb-btn-primary: 253, 253, 253;
   --lb-btn-secondary: 37, 38, 40;
@@ -124,10 +124,6 @@ ul {
 a {
   text-decoration: none;
 }
-a:hover{
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
 
 svg {
   pointer-events: none;
@@ -137,6 +133,7 @@ svg {
   background-color: transparent;
   stroke: var(--lb-icon);
   fill: var(--lb-icon);
+  transition: stroke .2s ease, fill .2s ease;
 }
 .icon svg{
   pointer-events: none;
