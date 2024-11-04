@@ -40,6 +40,7 @@ input[type="url"]:focus {
     left: 16px;
     transform: translateY(-50%);
     font-size: calc(var(--lb-multiplier) * 15px);
+    background-color: rgb(var(--lb-bg));
     transition: top .1s ease, left .1s, font-size .1s;
     color: rgb(var(--lb-br));
     font-weight: 400;
