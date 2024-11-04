@@ -50,13 +50,13 @@
 }
 
 .lb-dm-icon-toggle{
-    border: solid 1px rgba(var(--lb-br, .6));
+    border: solid 1px rgba(var(--lb-br), .6);
     padding: .25rem;
     height: 36px;
     aspect-ratio: 1 / 1;
 }
 .lb-dm-icon-toggle:hover{
-    background-color: rgba(var(--lb-br, .3));
+    background-color: rgba(var(--lb-br), .25);
 }
 .lb-dm-icon-toggle svg{
     height: 100%;
