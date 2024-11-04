@@ -35,7 +35,7 @@ input[type="url"]:focus {
     border: solid 1px rgb(var(--lb-br));
 }
 
-.lb-input-text span.absolute {
+.lb-input-text span.holder {
     background-color: rgb(var(--lb-bg-2));
     padding: 0px 5px;
     top: 48%;
@@ -51,7 +51,7 @@ input[type="url"]:focus {
     border: solid 1px rgb(var(--lb-br));
 }
 
-.lb-input-text.focused span.absolute {
+.lb-input-text.focused span.holder {
     top: -1px;
     left: 12px;
     font-size: var(--lb-fs-2);
