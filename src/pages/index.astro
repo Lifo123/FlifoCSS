@@ -1,6 +1,8 @@
 ---
 import { DarkmodeDrop, InputText } from "@lifo123/library";
 import Content from "./wasa.md";
+import Button from "@Components/Button";
+import AlertDialog from "@Components/AlertDialog";
 ---
 
 <script>
@@ -53,7 +55,8 @@ import Content from "./wasa.md";
 			href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="/src//output/Flifo.css" />
+		<link rel="stylesheet" href="/src/output/Flifo.css" />
+		<link rel="stylesheet" href="/public/index.css" />
 	</head>
 	<body class="f-col f-justify-center f-align-center">
 		<header
@@ -78,17 +81,21 @@ import Content from "./wasa.md";
 			<span class="btn btn-secondary br-6">Secondary</span>
 			<span class="btn btn-third br-6">third</span>
 		</div>
-		<div class=" w-60 mx-auto f-col g-2 mt-6">
+		<div class="w-60 mx-auto f-col g-2 mt-6">
 			<input class="input" type="text" placeholder="Search..." />
 			<input type="range" />
 			<input type="checkbox" />
 			<div class="" style="background-color: rgb(var(--lb-bg-2));">
 				<InputText
-				type="text"
-				placeholder="Search"
-				client:only="react"
-			/>
+					type="text"
+					placeholder="Search"
+					client:only="react"
+				/>
 			</div>
+		</div>
+		<AlertDialog client:only="react" />
+		<div class="f-row w-auto">
+			<Button client:only="react" />
 		</div>
 		<div class="lb-md w-60 mx-auto f-col g-2 mt-6">
 			<Content />
@@ -102,12 +109,12 @@ import Content from "./wasa.md";
 	}
 
 	.header {
-		background-color:  rgba(var(--lb-bg), 1);
+		background-color: rgba(var(--lb-bg), 1);
 		width: 100%;
 		padding: 1rem 3rem;
 		top: 0;
 		z-index: 1000;
-		border: solid 1px rgba(var(--lb-br), 0.0);
+		border: solid 1px rgba(var(--lb-br), 0);
 
 		animation: Scroll linear both;
 		animation-timeline: scroll();
@@ -118,7 +125,7 @@ import Content from "./wasa.md";
 		100% {
 			top: 20px;
 			border-radius: 150px;
-			background: rgba(var(--lb-bg), .8);
+			background: rgba(var(--lb-bg), 0.8);
 			backdrop-filter: blur(1px);
 			border: solid 1px rgba(var(--lb-br), 0.4);
 			width: 80%;
