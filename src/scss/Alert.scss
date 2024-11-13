@@ -44,3 +44,53 @@
         flex-direction: column-reverse !important;
     }
 }
+
+
+.lb-loading-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lb-circular-root {
+    display: inline-block;
+    animation: rotate 1.5s linear infinite;
+    aspect-ratio: 1/1;
+}
+
+.lb-circular-root svg {
+    width: 100%;
+    height: 100%;
+}
+
+.lb-circular-root circle {
+    stroke-dasharray: 80, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animación del trazo */
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 100, 200;
+        stroke-dashoffset: -15px;
+    }
+
+    100% {
+        stroke-dasharray: 80, 200;
+        stroke-dashoffset: -125px;
+    }
+}

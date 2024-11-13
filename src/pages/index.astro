@@ -3,8 +3,9 @@ import { DarkmodeDrop, InputText } from "@lifo123/library";
 import Content from "./wasa.md";
 import TipInfo from "@Components/TipInfo";
 
-import AlertPopup from "@Components/AlertPopup";
+import { AlertPopup } from "@Components/AlertPopup";
 import AlertButton from "@Components/AlertButton";
+import Loading from "@Components/Loading";
 ---
 
 <script>
@@ -61,8 +62,8 @@ import AlertButton from "@Components/AlertButton";
 		<link rel="stylesheet" href="/src/index.css" />
 	</head>
 	<body class="f-col f-justify-center f-align-center">
-		<AlertPopup client:only="react" id="wasa"/>
-		<AlertPopup client:only="react"/>
+		<AlertPopup client:only="react" id="wasa" />
+		<AlertPopup client:only="react" />
 		<header
 			class="header sticky f-row f-justify-between f-align-center px-5"
 		>
@@ -75,7 +76,7 @@ import AlertButton from "@Components/AlertButton";
 			</div>
 		</header>
 		<h1 class="mt-6 fw-500">Template Astro Lifo</h1>
-
+		<Loading />
 	</body>
 </html>
 
