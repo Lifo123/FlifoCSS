@@ -1,8 +1,10 @@
 ---
 import { DarkmodeDrop, InputText } from "@lifo123/library";
 import Content from "./wasa.md";
-import Button from "@Components/Button";
-import AlertDialog from "@Components/AlertDialog";
+import TipInfo from "@Components/TipInfo";
+
+import AlertPopup from "@Components/AlertPopup";
+import AlertButton from "@Components/AlertButton";
 ---
 
 <script>
@@ -56,50 +58,24 @@ import AlertDialog from "@Components/AlertDialog";
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/src/output/Flifo.css" />
-		<link rel="stylesheet" href="/public/index.css" />
+		<link rel="stylesheet" href="/src/index.css" />
 	</head>
 	<body class="f-col f-justify-center f-align-center">
+		<AlertPopup client:only="react" id="wasa"/>
+		<AlertPopup client:only="react"/>
 		<header
 			class="header sticky f-row f-justify-between f-align-center px-5"
 		>
 			<h2>LIFO</h2>
-			<div class="f-row g-3">
+			<div class="f-row g-3 f-center">
 				<p class="m-0">About</p>
 				<p class="m-0">Features</p>
 				<p class="m-0">Docs</p>
+				<AlertButton client:only="react" />
 			</div>
 		</header>
 		<h1 class="mt-6 fw-500">Template Astro Lifo</h1>
-		<DarkmodeDrop storage="F-Theme" client:only="react" />
-		<div class="f-row g-3 w-60 mx-auto mt-3 f-wrap">
-			<span class="btn btn-primary br-6">Get Started</span>
-			<span class="btn btn-secondary br-6">Secondary</span>
-			<span class="btn btn-third br-6">third</span>
-			<span class="btn btn-fourth br-6 sd-1">fourth</span>
-		</div>
-		<div class="f-row f-justify-between g-3 w-60 mx-auto mt-3 f-wrap">
-			<span class="btn btn-secondary br-6">Secondary</span>
-			<span class="btn btn-third br-6">third</span>
-		</div>
-		<div class="w-60 mx-auto f-col g-2 mt-6">
-			<input class="input" type="text" placeholder="Search..." />
-			<input type="range" />
-			<input type="checkbox" />
-			<div class="" style="background-color: rgb(var(--lb-bg-2));">
-				<InputText
-					type="text"
-					placeholder="Search"
-					client:only="react"
-				/>
-			</div>
-		</div>
-		<AlertDialog client:only="react" />
-		<div class="f-row w-auto">
-			<Button client:only="react" />
-		</div>
-		<div class="lb-md w-60 mx-auto f-col g-2 mt-6">
-			<Content />
-		</div>
+
 	</body>
 </html>
 

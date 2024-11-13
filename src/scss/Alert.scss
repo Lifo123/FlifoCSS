@@ -1,0 +1,46 @@
+.lb-popup {
+    background-color: #0000008e;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1100;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.lb-popup-div {
+    scale: .96;
+    bottom: 40px;
+    z-index: 1100;
+    transition: bottom .15s ease, scale .15s ease;
+}
+.lb-popup.active .lb-popup-div {
+    scale: 1;
+    bottom: 50px;
+}
+
+.lb-popup-content {
+    max-width: 460px;
+    background-color: rgba(var(--lb-bg-2));
+    border: solid 1px rgba(var(--lb-br), 0.4);
+}
+
+.lb-popup-content .btn {
+    min-width: 140px;
+}
+
+.lb-popup.active {
+    opacity: 1;
+    pointer-events: visible;
+}
+
+@media(550px > width) {
+    .lb-popup-content {
+        width: 90%;
+    }
+
+    .lb-popup-btn-sec {
+        flex-direction: column-reverse !important;
+    }
+}

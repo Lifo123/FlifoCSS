@@ -1,0 +1,36 @@
+.icon.tip:hover~.tip-text {
+    scale: 1;
+    opacity: 1;
+}
+
+.tip-text {
+    border: solid 1px rgba(var(--lb-br), 0.4);
+    max-width: 360px;
+    height: max-content;
+    line-height: 1.5;
+    padding: 0.5rem 0.9rem;
+    background: rgba(var(--lb-bg-2));
+    scale: 0;
+    opacity: 0;
+    transition: scale 0.2s ease, opacity 0.15s ease;
+    z-index: 10;
+}
+
+.tip-text.left {
+    left: 110%;
+    transform-origin: top left;
+}
+
+.tip-text.right {
+    right: 110%;
+    transform-origin: top right;
+}
+
+
+.tip-text.top {
+    top: 120%;
+}
+
+.tip-text.bottom {
+    bottom: 120%;
+}
