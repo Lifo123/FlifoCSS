@@ -24,7 +24,20 @@
     max-width: 460px;
     background-color: rgba(var(--lb-bg-2));
     border: solid 1px rgba(var(--lb-br), 0.4);
+    line-height: 1.4;
 }
+
+.lb-popup-close{
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    outline: solid 1px rgba(var(--lb-br), 0.25);
+    background-color: transparent;
+    transition: background-color .15s ease;
+}
+.lb-popup-close:hover{
+    background-color: rgba(var(--lb-bg-4));
+}
+
 
 .lb-popup-content .btn {
     min-width: 140px;
@@ -37,9 +50,16 @@
 
 @media(550px > width) {
     .lb-popup-content {
-        width: 95%;
+        width: 96%;
+        text-align: center;
     }
-
+    .lb-popup-content .lb-popup-close{
+        display: none;
+    }
+    .lb-popup-content a{
+        margin-inline: auto;
+        margin-top: .25rem;
+    }
     .lb-popup-btn-sec {
         flex-direction: column-reverse !important;
     }

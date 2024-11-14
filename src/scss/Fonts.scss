@@ -12,7 +12,7 @@ h3 {
 
 h4 {
     font-size: var(--lb-fs-4);
-    font-family: 500;
+    font-weight: 500;
 }
 
 h5 {
@@ -130,6 +130,57 @@ p {
     font-size: var(--lb-fs-16);
 }
 
+.fs-custom-11 {
+    font-size: calc(var(--lb-multiplier) * 11px);
+}
+
+.fs-custom-11-5 {
+    font-size: calc(var(--lb-multiplier) * 11px);
+}
+
+.fs-custom-12-5 {
+    font-size: calc(var(--lb-multiplier) * 12.5px);
+}
+
+.fs-custom-13 {
+    font-size: calc(var(--lb-multiplier) * 13px);
+}
+
+.fs-custom-13-5 {
+    font-size: calc(var(--lb-multiplier) * 13.5px);
+}
+
+.fs-custom-14-5 {
+    font-size: calc(var(--lb-multiplier) * 14.5px);
+}
+
+.fs-custom-15 {
+    font-size: calc(var(--lb-multiplier) * 15px);
+}
+
+.fs-custom-15-5 {
+    font-size: calc(var(--lb-multiplier) * 15.5px);
+}
+
+.fs-custom-16-5 {
+    font-size: calc(var(--lb-multiplier) * 16.5px);
+}
+
+.fs-custom-17 {
+    font-size: calc(var(--lb-multiplier) * 17px);
+}
+
+.fs-custom-17-5 {
+    font-size: calc(var(--lb-multiplier) * 17.5px);
+}
+
+.fs-custom-18-5 {
+    font-size: calc(var(--lb-multiplier) * 18.5px);
+}
+
+.fs-custom-19 {
+    font-size: calc(var(--lb-multiplier) * 19px);
+}
 
 
 /*Font Color*/
@@ -149,10 +200,18 @@ p {
     text-align: justify;
 }
 
+.link {
+    padding: 0.2rem;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.15s ease, color 0.1s ease, padding .15s ease;
+}
 
 .link:hover {
     color: var(--lb-hsl-primary);
+    background-color: hsl(var(--lb-hue), var(--lb-sat), var(--lb-light), 0.06);
 }
+
 
 
 .text-white {
