@@ -4,6 +4,8 @@ Build/
 
 # generated types
 .astro/
+apps/
+utils/
 
 # dependencies
 node_modules/
