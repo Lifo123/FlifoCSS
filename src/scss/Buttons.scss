@@ -28,7 +28,11 @@
 .btn-primary {
   background-color: rgb(var(--lb-btn-primary));
   color: rgb(var(--lb-bg));
-  transition: opacity .17s ease-out;  
+  transition: opacity .17s ease-out;
+}
+
+.btn-primary .lb-circular-root svg {
+  stroke: rgb(var(--lb-bg)) !important;
 }
 
 .btn-primary:hover {
