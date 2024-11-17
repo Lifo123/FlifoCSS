@@ -1,8 +1,9 @@
 ---
 import Count from "@Apps/Count";
 import Inputs from "@Apps/Inputs";
-import { AlertPopup } from "@lifo123/library";
+import { AlertPopup, ButtonPromise } from "@lifo123/library";
 import Toaster from "@Components/Toaster";
+import { toast } from "sonner";
 ---
 
 <script>
@@ -61,41 +62,7 @@ import Toaster from "@Components/Toaster";
 		style="max-width: 820px;"
 	>
 		<Toaster client:only="react"/>
-		<AlertPopup client:only="react" />
-		<header
-			class="header sticky f-row f-justify-between f-align-center px-5 py-3 w-100"
-		>
-			<h2>LIFO</h2>
-			<div class="f-row g-3 f-center">
-				<p class="m-0">Abouta</p>
-				<p class="m-0">Features</p>
-				<p class="m-0">Docs</p>
-			</div>
-		</header>
-		<h1 class="mt-6 fw-500 w-100 btn-br mx-auto" style="max-width: 800px;">
-			Template Astro Lifo
-			<Count client:only="react" />
-		</h1>
-		<div class="w-60 mx-auto btn-br mt-4 relative" style="height: 320px;">
-		</div>
-		<Inputs client:only="react" />
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
-		<p>dawdwa</p>
+		<Toaster client:only="react" id="sec-1" position="bottom-right"/>
+		<Count client:only="react" />
 	</body>
 </html>

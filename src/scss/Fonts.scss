@@ -200,16 +200,10 @@ p {
     text-align: justify;
 }
 
-.link {
-    padding: 0.2rem;
-    border-radius: 4px;
-    background-color: transparent;
-    transition: background-color 0.15s ease, color 0.1s ease, padding .15s ease;
-}
-
 .link:hover {
     color: var(--lb-hsl-primary);
-    background-color: hsl(var(--lb-hue), var(--lb-sat), var(--lb-light), 0.06);
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 
