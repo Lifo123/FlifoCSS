@@ -242,6 +242,7 @@ p {
 .text-small {
     font-size: calc(var(--lb-multiplier) * 12px);
     line-height: 1rem;
+    letter-spacing: 0.015em;
     color: rgb(var(--lb-text));
 }
 

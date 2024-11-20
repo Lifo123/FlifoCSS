@@ -1,26 +1,3 @@
-@keyframes rotate {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes dash {
-    0% {
-        stroke-dasharray: 1, 200;
-        stroke-dashoffset: 0;
-    }
-
-    50% {
-        stroke-dasharray: 100, 200;
-        stroke-dashoffset: -15px;
-    }
-
-    100% {
-        stroke-dasharray: 80, 200;
-        stroke-dashoffset: -125px;
-    }
-}
-
 [data-animate="none"] {
     transition: none;
 }
@@ -211,4 +188,26 @@
 [data-animate="fade"][data-axis-x="right"] {
     --slide-start-right: 1.2rem;
     --slide-end-right: 1.2rem;
+}
+
+
+
+
+[data-animate="custom"].delete {
+    top: var(--custom-start-top, auto);
+    left: var(--custom-start-left, auto);
+    right: var(--custom-start-right, auto);
+    bottom: var(--custom-start-bottom, auto);
+    opacity: var(--custom-opacity, 0);
+    transform: var(--custom-transform, auto);
+}
+
+
+[data-animate="custom"].visible {
+    top: var(--custom-end-top, auto);
+    left: var(--custom-end-left, auto);
+    right: var(--custom-end-right, auto);
+    bottom: var(--custom-end-bottom, auto);
+    opacity: var(--custom-opacity, 0);
+    transform: var(--custom-transform, auto);
 }

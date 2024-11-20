@@ -9,7 +9,7 @@
     transform: translate(-50%, -50%);
     z-index: 1100;
     pointer-events: visible;
-    transition: background-color 0.15s ease, opacity .15s ease;
+    transition: background-color 0.2s ease, opacity .2s ease;
 }
 .flifo-portal.visible {
     opacity: 1;
