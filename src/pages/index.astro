@@ -1,9 +1,9 @@
 ---
 import Count from "@Apps/Count";
-import Inputs from "@Apps/Inputs";
+import Dropdown from "@Components/Dropdown";
+import Dropper from "@Components/Dropper";
 import { AlertPopup, ButtonPromise } from "@lifo123/library";
-import Toaster from "@Components/Toaster";
-import { toast } from "sonner";
+import { Toaster } from "@lifo123/library/Toast";
 ---
 
 <script>
@@ -61,8 +61,26 @@ import { toast } from "sonner";
 		class="f-col f-justify-center f-align-center mx-auto relative w-80"
 		style="max-width: 820px;"
 	>
-		<Toaster client:only="react"/>
-		<Toaster client:only="react" id="sec-1" position="bottom-right"/>
+		<Toaster client:only="react" />
+		<Dropper client:only="react" />
 		<Count client:only="react" />
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
+		<p class="mb-6">hola</p>
 	</body>
 </html>
+
+<style>
+	body{
+		background-color: rgb(var(--lb-bg));
+	}
+</style>

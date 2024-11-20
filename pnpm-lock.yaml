@@ -24,8 +24,8 @@ importers:
         specifier: ^3.2.1
         version: 3.2.1
       '@lifo123/library':
-        specifier: ^1.4.2
-        version: 1.4.2(@nanostores/react@0.8.0(nanostores@0.11.3)(react@18.3.1))(nanostores@0.11.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.4.4
+        version: 1.4.4(@nanostores/react@0.8.0(nanostores@0.11.3)(react@18.3.1))(nanostores@0.11.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nanostores/react':
         specifier: ^0.8.0
         version: 0.8.0(nanostores@0.11.3)(react@18.3.1)
@@ -50,9 +50,6 @@ importers:
       sass:
         specifier: 1.77.0
         version: 1.77.0
-      sonner:
-        specifier: ^1.7.0
-        version: 1.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@types/node':
         specifier: ^22.8.2
@@ -520,8 +517,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lifo123/library@1.4.2':
-    resolution: {integrity: sha512-lbgqgfOaDJkb2M8+UB012LBO0g2x4zoLraI6124GkT02FRyfHVrTtBcYUrYUbSTXH2gHi+trcxyMY/oxioPRRg==}
+  '@lifo123/library@1.4.4':
+    resolution: {integrity: sha512-XI5rWuD81kyFzX6Y6JS9jWJY0TClQiMjVsQ/aQ87CwsSvztzdAE1JDaP6yrpxoFZIOw8tELlskQtHzvvqzSgyQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@nanostores/react': ^0.8.0
@@ -1914,12 +1911,6 @@ packages:
     engines: {node: '>=14.0.0', npm: '>=6.0.0'}
     hasBin: true
 
-  sonner@1.7.0:
-    resolution: {integrity: sha512-W6dH7m5MujEPyug3lpI2l3TC3Pp1+LTgK0Efg+IHDrBbtEjyCmCHHo6yfNBOsf1tFZ6zf+jceWwB38baC8yO9g==}
-    peerDependencies:
-      react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
-      react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
-
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -2805,7 +2796,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lifo123/library@1.4.2(@nanostores/react@0.8.0(nanostores@0.11.3)(react@18.3.1))(nanostores@0.11.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@lifo123/library@1.4.4(@nanostores/react@0.8.0(nanostores@0.11.3)(react@18.3.1))(nanostores@0.11.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@nanostores/react': 0.8.0(nanostores@0.11.3)(react@18.3.1)
       nanostores: 0.11.3
@@ -4746,11 +4737,6 @@ snapshots:
       '@types/sax': 1.2.7
       arg: 5.0.2
       sax: 1.4.1
-
-  sonner@1.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
 
   source-map-js@1.2.1: {}
 
