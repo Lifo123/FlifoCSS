@@ -211,3 +211,10 @@
     opacity: var(--custom-opacity, 0);
     transform: var(--custom-transform, auto);
 }
+
+
+@keyframes rotate {
+    to{
+        transform: rotate(720deg);
+    }
+}
