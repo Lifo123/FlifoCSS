@@ -9,9 +9,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "gh-pages -d Build --dotfiles",
-    "predeploy": "pnpm run build",
-    "sass": "sass --style=compressed src/scss/Main.scss src/output/Flifo.css"
+    "deploy": "gh-pages -d public --dotfiles",
+    "predeploy": "pnpm run sass",
+    "sass": "sass --style=compressed src/scss/Main.scss public/Flifo.css"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
